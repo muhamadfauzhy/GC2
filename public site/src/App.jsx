@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Home from "../views/home";
-import Detail from "../views/detail";
+import Home from "./views/home";
+import Detail from "./views/detail";
 import { BrowserRouter, Routes, Route } from "react-router";
-import BaseLayout from "../views/BaseLayout";
+import BaseLayout from "./views/BaseLayout";
 
 function App() {
 
