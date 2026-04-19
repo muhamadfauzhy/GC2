@@ -1,12 +1,12 @@
-import Login from "../views/loginPage";
-import Home from "../views/homePage";
+import Login from "./views/loginPage";
+import Home from "./views/homePage";
 import { useState } from "react";
-import CreatePage from "../views/createPage";
+import CreatePage from "./views/createPage";
 import { BrowserRouter, Routes, Route } from "react-router";
-import BaseLayout from "../views/BaseLayout";
-import EditPage from "../views/editPage";
-import ImagePage from "../views/imagePage";
-import AddUserPage from "../views/addUserPage";
+import BaseLayout from "./views/BaseLayout";
+import EditPage from "./views/editPage";
+import ImagePage from "./views/imagePage";
+import AddUserPage from "./views/addUserPage";
 
 function App() {
   const [page, setPage] = useState('login')
