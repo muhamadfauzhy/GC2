@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="p-5">
+        <nav class="sticky top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-10 bg-white shadow">
+        <!-- Left Menu -->
+            <div class="flex space-x-6 text-sm tracking-widest">
+                <h1>MENU LIST</h1>
+            </div>
+
+            <!-- Logo Center (FIXED CENTER) -->
+            <div class="absolute left-1/2 transform -translate-x-1/2">
+                <img src="../asset/Logo2.png" alt="logo" class="h-25 w-auto object-contain">
+            </div>
+
+            <!-- Right Menu -->
+            <div class="flex items-center space-x-6 text-sm tracking-widest">
+                <a href="login-page.html" class="hover:text-orange-500">LOGIN</a>
+            </div>
+        </nav>
+        
+
+        <div class="flex flex-wrap gap-4 p-6">
+            <!-- Search -->
+            <input type="text" placeholder="Search..."
+                class="border rounded-lg px-4 py-2 w-60">
+
+            <!-- Filter -->
+            <select class="border rounded-lg px-4 py-2">
+                <option>All Category</option>
+                <option>Indonesian Food</option>
+                <option>Thailand Food</option>
+                <option>Vietnamese Food</option>
+                <option>Malaysian Food</option>
+                <option>Singaporean Food</option>
+            </select>
+
+            <!-- Sort -->
+            <select class="border rounded-lg px-4 py-2">
+                <option>Sort by</option>
+                <option>Name</option>
+                <option>Price</option>
+            </select>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <!-- Card -->
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://dimsimlim.com/wp-content/uploads/2024/12/Spicy-Nasi-Goreng-1.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Nasi Goreng</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 18.000</p>
+                <p class="text-sm text-gray-500">Indonesia Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://cdn0-production-images-kly.akamaized.net/Tk__hIaiQK_9GDgOELc-f3WcSFU=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3129172/original/099632200_1589527804-shutterstock_1455941861.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Mie Goreng</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 17.000</p>
+                <p class="text-sm text-gray-500">Indonesia Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://thegourmandiseschool.com/wp-content/uploads/2025/05/rendang-spicy-and-tender-indonesian-beef-bowl_59519610-500x375.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Rendang</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 35.000</p>
+                <p class="text-sm text-gray-500">Indonesia Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/02/Resep-Sate-Ayam-Madura.jpg?fit=1920%2C1804&ssl=1" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Sate Ayam</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 25.000</p>
+                <p class="text-sm text-gray-500">Indonesia Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Tom Yun</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 40.000</p>
+                <p class="text-sm text-gray-500">Thailand Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://asset.kompas.com/crops/SDbYKxuFK4DHSNAPtnKDWEhjCQQ=/0x0:1000x667/1200x800/data/photo/2022/12/13/6397e5ebf3d55.jpeg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Pad Thai</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 32.000</p>
+                <p class="text-sm text-gray-500">Thailand Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://hot-thai-kitchen.com/wp-content/uploads/2022/04/Green-curry-chicken-sq-2.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Green Curry</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 38.000</p>
+                <p class="text-sm text-gray-500">Thailand Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/db5ef13f0825b81a5445ae9d30b97ed6/Derivates/dc31adf30cce05a9f858beccb77038d992175aa6.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Mango Sticky Rice</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 22.000</p>
+                <p class="text-sm text-gray-500">Thailand Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://noshingwiththenolands.com/wp-content/uploads/2017/02/Vietnamese-Pho-Recipe-1200-x-1200.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Pho</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 30.000</p>
+                <p class="text-sm text-gray-500">Vietnamese Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                <img src="https://www.andy-cooks.com/cdn/shop/articles/20230518150440-andy-20cooks-20-20bahn-20mi.jpg?v=1690353737" class="w-full h-48 object-cover rounded-lg mb-3">
+                <h2 class="text-lg font-semibold">Banh Mi</h2>
+                <p class="text-orange-500 font-bold mt-1">Rp 20.000</p>
+                <p class="text-sm text-gray-500">Vietnamese Food</p>
+                <button class="mt-3 text-orange-500 hover:underline">Detail</button>
+            </div>
+
+        </div>
+        <div class="flex justify-center gap-2 p-6">
+            <a href="index.html" class="px-3 py-1 border rounded bg-blue-500 text-white">1</a>
+            <a href="page2.html" class="px-3 py-1 border rounded">2</a>
+        </div>
+    </div>
+</body>
+</html>

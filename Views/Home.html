@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="p-5">
+        <nav class="sticky top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-10 bg-white shadow">
+        <!-- Left Menu -->
+            <div class="flex space-x-6 text-sm tracking-widest">
+                <h1 class="font-semibold">MENU LIST</a>
+            </div>
+
+            <!-- Logo Center (FIXED CENTER) -->
+            <div class="absolute left-1/2 transform -translate-x-1/2">
+                <img src="../asset/Logo2.png" alt="logo" class="h-25 w-auto object-contain">
+            </div>
+
+            <!-- Right Menu -->
+            <div class="flex items-center space-x-6 text-sm tracking-widest">
+                <a href="category.html" class="bg-orange-500 text-white px-4 py-2 rounded">CATEGORY LIST</a>
+                <a href="create.html" class="bg-orange-500 text-white px-4 py-2 rounded">ADD MENU</a>
+                <a href="login-page.html" class="bg-orange-500 text-white px-4 py-2 rounded">LOGOUT</a>
+            </div>
+        </nav>   
+
+        <table class="w-full border border-gray-300 rounded-lg overflow-hidden">
+
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="p-3 text-left">No</th>
+                    <th class="p-3 text-left">Image</th>
+                    <th class="p-3 text-left">Name</th>
+                    <th class="p-3 text-left">Category</th>
+                    <th class="p-3 text-left">Price</th>
+                    <th class="p-3 text-left">Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="border-t">
+                    <td class="p-3">1</td>
+                    <td class="p-3">
+                        <a href="image.html">
+                            <img src="https://dimsimlim.com/wp-content/uploads/2024/12/Spicy-Nasi-Goreng-1.jpg" 
+                                class="h-16 w-20 object-cover rounded cursor-pointer hover:scale-105 transition">
+                        </a>
+                    </td>
+                    <td class="p-3">Nasi Goreng</td>
+                    <td class="p-3">Indonesia Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 18.000</td>
+                    <td class="p-3">
+                        <a href="detail.html" class="text-orange-500 hover:underline">Detail</a> ||
+                        <a href="edit.html" class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t">
+                    <td class="p-3">2</td>
+                    <td class="p-3">
+                        <img src="https://cdn0-production-images-kly.akamaized.net/Tk__hIaiQK_9GDgOELc-f3WcSFU=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3129172/original/099632200_1589527804-shutterstock_1455941861.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Mie Goreng</td>
+                    <td class="p-3">Indonesia Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 17.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">3</td>
+                    <td class="p-3">
+                        <img src="https://thegourmandiseschool.com/wp-content/uploads/2025/05/rendang-spicy-and-tender-indonesian-beef-bowl_59519610-500x375.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Rendang</td>
+                    <td class="p-3">Indonesia Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 35.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">4</td>
+                    <td class="p-3">
+                        <img src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/02/Resep-Sate-Ayam-Madura.jpg?fit=1920%2C1804&ssl=1" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Sate Ayam</td>
+                    <td class="p-3">Indonesia Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 25.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">5</td>
+                    <td class="p-3">
+                        <img src="https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Tom Yun</td>
+                    <td class="p-3">Thailand Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 40.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">6</td>
+                    <td class="p-3">
+                        <img src="https://asset.kompas.com/crops/SDbYKxuFK4DHSNAPtnKDWEhjCQQ=/0x0:1000x667/1200x800/data/photo/2022/12/13/6397e5ebf3d55.jpeg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Pad Thai</td>
+                    <td class="p-3">Thailand Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 32.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">7</td>
+                    <td class="p-3">
+                        <img src="https://hot-thai-kitchen.com/wp-content/uploads/2022/04/Green-curry-chicken-sq-2.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Green Curry</td>
+                    <td class="p-3">Thailand Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 38.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">8</td>
+                    <td class="p-3">
+                        <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/db5ef13f0825b81a5445ae9d30b97ed6/Derivates/dc31adf30cce05a9f858beccb77038d992175aa6.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Mango Sticky Rice</td>
+                    <td class="p-3">Thailand Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 22.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">9</td>
+                    <td class="p-3">
+                        <img src="https://noshingwiththenolands.com/wp-content/uploads/2017/02/Vietnamese-Pho-Recipe-1200-x-1200.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Pho</td>
+                    <td class="p-3">Vietnamese Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 30.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">10</td>
+                    <td class="p-3">
+                        <img src="https://www.andy-cooks.com/cdn/shop/articles/20230518150440-andy-20cooks-20-20bahn-20mi.jpg?v=1690353737" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Banh Mi</td>
+                    <td class="p-3">Vietnamese Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 20.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">11</td>
+                    <td class="p-3">
+                        <img src="https://www.thegraciouspantry.com/wp-content/uploads/2018/12/clean-eating-spring-rolls-v-1-.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Spring Rolls</td>
+                    <td class="p-3">Vietnamese Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 15.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">12</td>
+                    <td class="p-3">
+                        <img src="https://cdn.shopify.com/s/files/1/0725/3911/1726/files/20250617054400-andy-20cooks-20-20pork-20veg-20and-20noodles-20recipe.jpg?v=1750139042&width=1000&height=1000" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Bun Cha</td>
+                    <td class="p-3">Vietnamese Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 25.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">13</td>
+                    <td class="p-3">
+                        <img src="https://foreignfork.com/wp-content/uploads/2025/10/Nasi-Lemak-Feature-Image.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Nasi Lemak</td>
+                    <td class="p-3">Malaysian Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 20.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">14</td>
+                    <td class="p-3">
+                        <img src="https://www.recipetineats.com/tachyon/2016/09/Laksa.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Laksa</td>
+                    <td class="p-3">Malaysian Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 30.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">15</td>
+                    <td class="p-3">
+                        <img src="https://www.seriouseats.com/thmb/nGOaY9vCED-HI0QxcRRs3-BxyQs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20250821-SEA-CharKwayTeow-MelatiCitrawireja-HERO-a70f91c1c5c64104ba1f4fee9034935c.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Char Kway Teow</td>
+                    <td class="p-3">Malaysian Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 28.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">16</td>
+                    <td class="p-3">
+                        <img src="https://www.theflavorbender.com/wp-content/uploads/2021/09/Roti-Canai-6501-2-500x375.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Roti Canai</td>
+                    <td class="p-3">Malaysian Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 10.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">17</td>
+                    <td class="p-3">
+                        <img src="https://redhousespice.com/wp-content/uploads/2017/09/easy-hainanese-chicken-rice-scaled.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Hainanese Chicken Rice</td>
+                    <td class="p-3">Singaporean Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 25.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">18</td>
+                    <td class="p-3">
+                        <img src="https://www.thespruceeats.com/thmb/Ja25t2lEffVNc5dRNtpuXMbLMjs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chilicrab640-568f339f3df78cafda7b4db1.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Chili Crab</td>
+                    <td class="p-3">Singaporean Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 50.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">19</td>
+                    <td class="p-3">
+                        <img src="https://noobcook.com/wp-content/uploads/2012/09/klang.jpg" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Bak Kut Teh</td>
+                    <td class="p-3">Singaporean Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 40.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+                <tr class="border-t hover:bg-gray-50">
+                    <td class="p-3">20</td>
+                    <td class="p-3">
+                        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/9/12/KAYA_TOAST_H.jpg.rend.hgtvcom.1280.960.suffix/1694544957700.webp" class="h-16 w-20 object-cover rounded">
+                    </td>
+                    <td class="p-3">Kaya Toast</td>
+                    <td class="p-3">Singaporean Food</td>
+                    <td class="p-3 text-orange-500 font-bold">Rp 15.000</td>
+                    <td class="p-3">
+                        <a class="text-orange-500 hover:underline">Detail</a> ||
+                        <a class="text-orange-500 hover:underline">Edit</a> 
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

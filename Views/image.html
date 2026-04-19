@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Upload Image</title>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-6 bg-white shadow">
+        <h1 class="font-semibold text-sm tracking-widest">UPLOAD IMAGE</h1>
+
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+            <img src="../asset/Logo2.png" class="h-16">
+        </div>
+
+        <div class="flex items-center space-x-6 text-sm tracking-widest">
+            <a href="home.html" class="bg-orange-500 text-white px-4 py-2 rounded">BACK</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="max-w-xl mx-auto pt-32 px-6">
+        <div class="bg-white rounded-2xl shadow p-6 text-center">
+
+            <!-- Title -->
+            <h2 class="text-xl font-bold mb-2">Nasi Goreng</h2>
+            <p class="text-sm text-gray-500 mb-4">Update menu image</p>
+
+            <!-- Current Image -->
+            <img 
+                src="https://dimsimlim.com/wp-content/uploads/2024/12/Spicy-Nasi-Goreng-1.jpg"
+                class="w-full h-60 object-cover rounded-xl mb-4">
+
+            <!-- Form -->
+            <form>
+                <div>
+                    <input 
+                        type="text" 
+                        name="imgUrl" 
+                        placeholder="Update image here"
+                        class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                </div>
+
+                <div class="flex justify-center gap-3">
+                    <a href="image.html" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
+                        Cancel
+                    </a>
+                    <a href="Home.html" class="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">
+                        Upload
+                    </a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
