@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from 'axios'
-import baseUrl from "../src/constant/baseUrl";
+import baseUrl from "../constant/baseUrl";
 import { useNavigate } from "react-router";
 import Toastify from 'toastify-js'
 

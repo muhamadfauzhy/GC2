@@ -1,16 +1,20 @@
+import { useState, useEffect } from "react";
 import ProductForm from "../components/produckForm";
-import Toastify from 'toastify-js'
-import axios from 'axios'
-import baseUrl from "../src/constant/baseUrl";
+import { useParams } from "react-router"
+import axios from "axios";
+import baseUrl from "../constant/baseUrl";
 import { useNavigate } from 'react-router'
+import Toastify from 'toastify-js'
 
-export default function CreatePage() {
+export default function EditPage() {
+    const [cuisines, setCuisines] = useState({})
+    const { id } = useParams() 
     const navigate = useNavigate()
 
     async function handleSubmit(e, form) {
         e.preventDefault()
         try {
-            const { data } = await axios.post(`${baseUrl}cuisines`, form, {
+            const { data } = await axios.put(`${baseUrl}cuisines/${id}`, form, {
                 headers: {
                 Authorization: `Bearer ${localStorage.access_token}`,
                 },
@@ -18,7 +22,7 @@ export default function CreatePage() {
 
             navigate('/home')
             Toastify({
-                text: "Succeed Add New Menu",
+                text: "Succeed Edit Menu",
                 duration: 3000,
                 close: false,
                 gravity: "top",
@@ -42,9 +46,28 @@ export default function CreatePage() {
             }).showToast();
         }
     }
+    
+    async function fetchCuisines() {
+        try {
+            const { data } = await axios.get(`${baseUrl}cuisines/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.access_token}`
+                },
+            })
+
+            setCuisines(data.data)
+        } catch (error) {
+    
+        } 
+    }
+
+    useEffect (() => {
+        fetchCuisines()
+    }, [])
+
     return(
         <>
-          <ProductForm handleSubmit={handleSubmit} nameProp="Add Menu"/>
+          <ProductForm nameProp={"Edit Menu"} cuisines={cuisines} handleSubmit={handleSubmit}/>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios";
-import baseUrl from "../src/constant/baseUrl";
+import baseUrl from "../constant/baseUrl";
 
 export default function ProductForm ({handleSubmit, nameProp, cuisines}) {
     const [categories, setCategories] = useState([])

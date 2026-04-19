@@ -3,8 +3,8 @@ import { Link, useParams } from "react-router";
 import ProduckCard from "../components/ProductCard"
 import axios from 'axios'
 import Toastify from 'toastify-js'
-import loadingGif from '../src/assets/loading.svg'
-import baseUrl from "../src/constant/baseUrl";
+import loadingGif from '../assets/loading.svg'
+import baseUrl from "../constant/baseUrl";
 
 export default function Detail() {
     const { id } = useParams()

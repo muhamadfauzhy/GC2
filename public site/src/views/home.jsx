@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import ProduckCard from "../components/ProductCard";
 import axios from "axios";
-import baseUrl from "../src/constant/baseUrl";
-import loadingGif from "../src/assets/loading.svg";
+import baseUrl from "../constant/baseUrl";
+import loadingGif from "../assets/loading.svg";
 
 export default function Home() {
     const [cuisines, setCuisines] = useState([]);

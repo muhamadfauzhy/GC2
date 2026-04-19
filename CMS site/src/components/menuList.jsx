@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 import Toastify from 'toastify-js'
 import axios from 'axios'
-import baseUrl from "../src/constant/baseUrl";
+import baseUrl from "../constant/baseUrl";
 
 export default function MenuList({ cuisines, fetchCuisines }) {
     async function handleDelete() {

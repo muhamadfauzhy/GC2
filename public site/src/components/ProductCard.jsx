@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { NavLink } from "react-router";
-import baseUrl from "../src/constant/baseUrl";
+import baseUrl from "../constant/baseUrl";
 
 export default function ProduckCard ({cuisines}) {
 
